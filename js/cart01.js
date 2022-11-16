@@ -119,23 +119,22 @@ function sliderChanger(event, eventAction, productsArray) {
   const sliderLineLength = sliderLine.offsetWidth;
   // console.log(sliderLineLength);
   if (eventAction === 'slide-left') {
-    sliderContainer.style.WebkitTransition = 'initial';
     slideNumber--;
-    // console.log(slideNumber);
+    sliderContainer.style.WebkitTransition = 'initial';
+    slideStep = -sliderLineLength;
+    sliderTohCange.style.marginLeft = slideStep + 'px';
     if (slideNumber < 0) {
       slideNumber = productsCount;
     }
     renderSlider(slideNumber, eventAction, productsArray);
-    slideStep = -sliderLineLength;
-    sliderTohCange.style.marginLeft = slideStep + 'px';
     setTimeout(() => {
       sliderContainer.style.WebkitTransition = 'all ease 0.5s';
       slideStep = 0;
-      sliderTohCange.style.marginLeft = 0 + 'px';
-      if (document.querySelectorAll('.products-slider-item').length > 2) {
-        document.querySelectorAll('.products-slider-item')[2].remove();
-      }
-    }, 500);
+      sliderTohCange.style.marginLeft = slideStep + 'px';
+    }, 5);
+    setTimeout(() => {
+      document.querySelectorAll('.products-slider-item')[1].remove();
+    }, 650);
   } else if (eventAction === 'slide-right') {
     slideNumber++;
     if (slideNumber > productsCount) {
