@@ -7,7 +7,6 @@ html {
 h3,
 h4 {
 	font-family: 'Merriweather', serif;
-
 }
 
 .header {
@@ -21,6 +20,16 @@ h4 {
 	justify-content: center;
 	justify-self: center;
 	align-items: center;
+}
+
+.lead {
+	text-decoration: none;
+	color: #212529;
+}
+
+.lead:hover {
+	text-decoration: none;
+	color: #212529;
 }
 
 .slider {
