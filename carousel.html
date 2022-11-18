@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/carousel.css">
     <title>carousel with many visible elements</title>
 </head>
@@ -83,32 +84,136 @@
         <div class="block__accordeon one">
             <div class="block__accordeon__item">
                 <div class="block__accordeon__item__title">Title 1</div>
-                <div class="block__accordeon__item__text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это
+                <div class="block__accordeon__item__text">Многие думают, что Lorem Ipsum - взятый с потолка
+                    псевдо-латинский набор слов, но это
                     не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух
                     тысячелетий назад.</div>
             </div>
             <div class="block__accordeon__item">
                 <div class="block__accordeon__item__title">Title 2</div>
-                <div class="block__accordeon__item__text">Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял
+                <div class="block__accordeon__item__text">Ричард МакКлинток, профессор латыни из колледжа
+                    Hampden-Sydney, штат Вирджиния, взял
                     одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической
                     латинской литературе.</div>
             </div>
             <div class="block__accordeon__item">
                 <div class="block__accordeon__item__title">Title 3</div>
-                <div class="block__accordeon__item__text">В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и
+                <div class="block__accordeon__item__text">В результате он нашёл неоспоримый первоисточник Lorem Ipsum в
+                    разделах 1.10.32 и
                     1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45
                     году н.э.</div>
             </div>
             <div class="block__accordeon__item">
                 <div class="block__accordeon__item__title">Title 4</div>
-                <div class="block__accordeon__item__text">Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка
+                <div class="block__accordeon__item__text">Этот трактат по теории этики был очень популярен в эпоху
+                    Возрождения. Первая строка
                     Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</div>
             </div>
         </div>
     </div>
+    <div class="popup--wrapper">
+        <div class="popup-main-content">
+            <div class="popup-main-title">Title of popup parent</div>
+            <div class="popup-body-text">
+                <div class="popup--image">
+                    <img class="popup--image-pic" src="./img/rol/philadelphia.jpg" alt="rol" width="80">
+                </div>
+                <div class="popup-main-text">Lorem <span id="close-popup"></span> ipsum dolor sit amet consectetur adipisicing elit. In nihil eos vitae
+                    provident! Eligendi <span> <a href="#modal-1" class="iii">link 1</a></span> quae possimus dicta! Blanditiis, at sequi libero tempora labore laborum.
+                    Perspiciatis, commodi. Quas neque <span> <a href="#modal-2" class="iii">link 2</a></span> rerum amet?</div>
+            </div>
+        </div>
+        <div class="popup" id="modal-1">
+            <div class="popup--body">
+                <a href="#close-popup" class="popup-area"></a>
+                <div class="popup--content">
+                    <a href="#close-popup" class="popup-close">X</a>
+                    <div class="popup--title">
+                        Title-1
+                    </div>
+                    <div class="popup--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate <span> <a href="#modal-2" class="iii">link 2 </a></span>dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="modal-2">
+            <div class="popup--body">
+                <a href="#close-popup" class="popup-area"></a>
+                <div class="popup--content1">
+                    <a href="#close-popup" class="popup-close">X</a>
+                    <div class="popup--title">
+                        Title-2
+                    </div>
+                    <div class="popup--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate <span> <a href="#modal-1" class="iii"> link 1 </a></span> dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi harum incidunt,
+                        quisquam
+                        voluptate dolor eius voluptatum aut, autem atque velit enim omnis explicabo eum asperiores
+                        provident
+                        aspernatur vitae rerum!    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="./libs/jquery/jquery-3.3.1.min.js"></script>
-    <script src="./js/carousel.js"></script>
+    <div class="scripts__to_inplement">
+        <script src="./libs/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./js/carousel.js"></script>
+    </div>
+
 </body>
 
 </html>
