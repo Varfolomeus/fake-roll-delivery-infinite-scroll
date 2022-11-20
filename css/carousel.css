@@ -3,12 +3,18 @@
 * {
     --max-height-popup-text: 600px;
 }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .carousel-container {
     width: 1258px;
     margin: 50px auto;
     background: #ccc;
     min-height: 200px;
     position: relative;
+    text-align: center;
 }
 
 .carousel-container .carousel-inner {
@@ -31,7 +37,26 @@
 
 .carousel-container .track {
     display: flex;
-    transition: transform 0.2s;
+    transition: transform 1.5s;
+}
+
+.carousel-input input {
+    text-align: center;
+    width: 75px;
+    margin: 10px auto;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.carousel-input {
+    font-size: 30px;
+
+}
+
+.carousel-input input:hover,
+.carousel-input input:active {
+    border: none;
 }
 
 .carousel-container .card-container .card {
@@ -97,7 +122,6 @@
     max-width: 600px;
     padding: 50px;
     margin: 0 auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .block__accordeon {
@@ -208,7 +232,7 @@
     pointer-events: none;
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .popup-area {
@@ -229,14 +253,14 @@
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg) rotateY(0deg);
 }
 
 .popup:target .popup--content1 {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg) rotateY(0deg);
 }
 
 .popup--body {
@@ -247,26 +271,24 @@
     padding: 30px 10px;
 }
 
-.popup--content {
-    background-color: #fff;
-    color: #000;
-    max-width: 400px;
-    max-height: var(--max-height-popup-text);
-    transition: all 0.8s ease;
-    position: relative;
-    opacity: 0;
-    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
-}
-
+.popup--content,
 .popup--content1 {
     background-color: #fff;
     color: #000;
     max-width: 400px;
     max-height: var(--max-height-popup-text);
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
     position: relative;
     opacity: 0;
-    transform: perspective(600px) translate(0px, 100%) rotateX(-45deg);
+}
+
+.popup--content {
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg) rotateY(0deg);
+
+}
+
+.popup--content1 {
+    transform: perspective(600px) translate(0px, 100%) rotateX(-45deg) rotateY(0deg);
 }
 
 .popup-close {
